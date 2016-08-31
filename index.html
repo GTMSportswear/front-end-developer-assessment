@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>GTM Sportswear Front-End Developer Take-Home Assessment</title>
+    <link rel="stylesheet" href="https://static.gtmsportswear.com/assets/css/gtm.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>GTM Sportswear Take-Home Assessment</h1>
+        <h2>Objective</h2>
+        <p>Your goal for this assessment is to create a <i>Product Card</i> which will be composed of an image rotator, name, price, and list of tags.</p>
+        <p>You must create a module which generates the product card onto the page. This module will be consumed by the index entry point module, which is given to you.</p>
+        <p>Example Output: <img src="example-output.png" alt="Example of product card output" /></p>
+        
+        <h2>Modules</h2>
+        <h3>ProductCard Module</h3>
+        <p>The ProductCard module will need to consume our view engine, which simply allows you to template out HTML and add insert values easily within a module, allowing easier separation of concerns.</p>
+        
+        <h3>ImageRotator Module</h3>
+        <p>Responsibilities: To create a DOM node which shows a list of images, given a string array of URLs.</p>
+        <p>Further, it should have the ability to rotate forward or back through the list, possibly by a button or a link.</p>
+        
+        <h3>View Engine Module</h3>
+        <p>The view engine is a simple module which takes in a URL to the location of an HTML template page</p>
+        
+        <h3>Getting the Data</h3>
+        <p>For data, you must use our API end-point: https://api.gtmsportswear.com/v1/productfamilydetailed/11500</p>
+        
+        <h2>Final Notes</h2>
+        <ul class="disc">
+          <li>No framework usage such as Angular, React, Knockout, etc, is permitted.</li>
+          <li>ES6 is encouraged.</li>
+          <li>Use of promises is encouraged.</li>
+          <li>Install any packages or tools as you need to complete this.</li>
+          <li>The linear flow of this script will be:
+            <ul class="icon">
+              <li>Page Load</li>
+              <li>index.js > init()</li>
+              <li>index.js > Get API Data via XHR</li>
+              <li>Once data is received, create product card, which should generate a node that index can output.</li>
+            </ul>
+          </li>
+        </ul>
+        
+        <h2>Output</h2>
+        <div id="output">Feel free to use this to output your product card.</div>
+      </div>
+    </div>
+    
+    <script src="/lib/systemjs/build/system.min.js"></script>
+    <script>
+      System.import('/js/index')
+      .then(function(m) {
+        var index = new m.IndexPage();
+        index.init();
+      })
+      .catch(function(e) {
+        console.error('Could not load index page.');
+      });
+
+    </script>
+  </body>
+</html>

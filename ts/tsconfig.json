@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es6",
+    "module": "es6",
+    "removeComments": true,
+    "outDir": "../js"
+  }
+}

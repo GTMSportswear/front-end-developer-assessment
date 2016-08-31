@@ -1,0 +1,22 @@
+{
+  "name": "front-end-dev-take-home",
+  "version": "1.0.0",
+  "description": "A take home assessment for a candidate of the Front-End Developer position at GTM Sportswear.",
+  "main": "js/index.js",
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install"
+  },
+  "author": "GTM Sportswear",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "typescript": "^1.8.10",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ts": "^5.4.0",
+    "grunt-tslint": "^3.1.0",
+    "tslint": "^3.7.4"
+  }
+}
