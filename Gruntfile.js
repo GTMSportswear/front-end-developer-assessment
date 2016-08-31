@@ -10,18 +10,18 @@
       js: {
         expand: true,
         flatten: false,
-        cwd: 'ts',
+        cwd: 'public/ts',
         src: ['**/*.html'],
-        dest: 'js',
+        dest: 'public/js',
         filter: 'isFile'
       }
     },
     
     ts: {
       dist: {
-        src: ['ts/**/*.ts', '!ts/**/*.d.ts'],
+        src: ['public/ts/**/*.ts', '!public/ts/**/*.d.ts'],
         tsconfig: {
-          tsconfig: 'ts/tsconfig.json',
+          tsconfig: 'public/ts/tsconfig.json',
           passThrough: false
         }
       }
@@ -32,17 +32,17 @@
         configuration: 'tslint.json'
       },
       files: {
-        src: ['ts/**/*.ts', '!ts/**/*.d.ts']
+        src: ['public/ts/**/*.ts', '!public/ts/**/*.d.ts']
       }
     },
 
     watch: {
       ts: {
-        files: 'ts/**/*.ts',
+        files: 'public/ts/**/*.ts',
         tasks: ['tslint', 'ts']
       },
       views: {
-        files: ['ts/**/*.html'],
+        files: ['public/ts/**/*.html'],
         tasks: ['copy:js']
       }
     }
