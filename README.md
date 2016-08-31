@@ -26,4 +26,4 @@ Once started, more information detailing the actual work will be in the index.ht
 If you need any help or run into issues, please do not hesitate to reach out for help!
 
 ## Completion
-Once you are satisfied with your end product, archive your directory and email it, or using your favorite cloud service, to nick.george@igtm.com.
+Once you are satisfied with your module, zip up your directory and email it to nick.george@igtm.com. If you prefer, you can use your favorite cloud provider (OneDrive, Google Cloud, Amazon, Drop Box, etc), too.
