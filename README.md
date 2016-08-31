@@ -5,6 +5,7 @@ An assessment to review a candidate's qualificiation for the position of Front-E
 
 ### What You'll Need
 * Node.js v6.5.0 or greater
+* NPM version 3 or greater (Make sure to do a checking by running `npm --version`. If you need to update, run `npm install npm -g`
 * Web browser
 * Any editor of your choice
 
