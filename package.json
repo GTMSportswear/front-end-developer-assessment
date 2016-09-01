@@ -1,6 +1,6 @@
 {
   "name": "front-end-dev-take-home",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A take home assessment for a candidate of the Front-End Developer position at GTM Sportswear.",
   "main": "js/index.js",
   "scripts": {
